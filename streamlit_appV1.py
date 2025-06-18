@@ -257,18 +257,7 @@ export GOOGLE_API_KEY="your-actual-gemini-api-key-here"
                 except Exception as e:
                     st.error(f"❌ Error: {e}")
     
-    with col2:
-        if st.button("🧪 Test Translation"):
-            with st.spinner("Testing translation..."):
-                try:
-                    translator = TranslationService()
-                    test_text = "What is property law?"
-                    translated = translator.translate_text(test_text, "fr")
-                    st.success(f"✅ Translation test successful!")
-                    st.info(f"EN: {test_text}")
-                    st.info(f"FR: {translated}")
-                except Exception as e:
-                    st.error(f"❌ Translation test failed: {e}")
+
 
 def help_page():
     """Help and documentation page"""
