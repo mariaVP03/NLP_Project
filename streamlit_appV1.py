@@ -39,11 +39,12 @@ This simplified tool helps users explore and understand civil law across Europe.
 3. **Check "Analytics"** for usage insights and statistics.
 4. **Refer to "Help"** if you encounter issues.
 
-st.markdown("### 🌍 Supported Countries & Languages")
+### 🌍 Supported Countries & Languages
+""")
 st.write("Apart from the languages listed below, **English is also supported**.\n")
 
-for country, info in config.COUNTRIES.items():
-    st.write(f"- **{country}** ({info['lang_code']})")
+    for country, info in config.COUNTRIES.items():
+        st.write(f"- **{country}** ({info['lang_code']})")
 
 
     st.markdown("""
