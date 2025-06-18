@@ -41,8 +41,7 @@ This simplified tool helps users explore and understand civil law across Europe.
 
 ### 🌍 Supported Countries & Languages
 """)
-st.write("Apart from the languages listed below, **English is also supported**.\n")
-
+    
     for country, info in config.COUNTRIES.items():
         st.write(f"- **{country}** ({info['lang_code']})")
 
